@@ -1,0 +1,415 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*========== header =========== */
+header {
+   width:100%; 
+   position: fixed;
+   z-index: 99;
+}
+ 
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.795);
+	width:100%;
+	background-color: #000000;
+  position: relative;
+}
+nav div img {
+    position: absolute;
+    width: 200px;
+    top: -50px;
+    left: 90px;
+    cursor: pointer;
+}
+nav ul{
+	display: flex;
+	list-style:none;
+}
+nav ul li a{
+    height: 30px;
+    line-height: 25px;
+    padding: 2px 8px;
+    margin-left: 10px;
+    display: flex;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #f9f9f9;
+    letter-spacing: 1.6px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: rgb(209, 134, 49);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* =================== home setcion style */
+#home {
+    height: 110vh;
+    background-color: #273736;
+    background-image: url("/images/miha-jan-strehovec-5XAtF-Syisk-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: .89;
+  }
+
+#home  p, #home  q{
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: 600;
+  -webkit-text-stroke: 0.1vw #000;
+  margin: 0;
+  text-transform: capitalize;
+  text-shadow: 0px -1px 6px #000;
+  font-family: 'Courier New', Courier, monospace;
+}
+  #home .content-home {
+    position: relative;
+  }
+  
+  .content-home  h1 {
+    font-size: 5.5em;
+    text-align: center;
+    color: transparent;
+    text-shadow: 0px 16px 40px #000000 ;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin: 0px;
+    padding: 0px;
+    -webkit-text-stroke: 0.01vw #fff; 
+  }  
+
+.content-home  h1::before {
+  content: "filmmaker&designer";
+  position: absolute;
+  left: 0px;
+  top: 1%;
+  width: 100%;
+  height: 100%;
+  text-shadow: none;
+  overflow: hidden;
+  color: goldenrod;
+  border-right: 2px solid rgb(255, 255, 255);
+  -webkit-text-stroke: 0.2vw #000;
+  animation: animate 6s linear infinite;
+  -webkit-animation: animate 8s linear infinite;
+}
+#home  q{ font-size: 2vw; background-color: #000;}
+@keyframes animate {
+  0%,10%, 100% {
+    width: 0;
+  }
+  70%,90% {
+    width: 100%;
+  }
+}
+  .box-card01 {
+    padding: 1.5vw;
+    position: absolute;
+    right:0; top: 40%;
+    background-color: rgba(0, 0, 0, 0.486);
+    display: flex;
+    flex-direction: column;
+    border-right: none;
+    border-radius: 10px 0 0 25px;
+}
+
+.box-card01 a i {
+    color: #ffff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.box-card01 a i:hover {
+    color: rgba(255, 255, 255, 0.616);
+}
+/* ==============style of section about me============= */
+#about {
+    min-height: 70vh;
+    background: #273736;
+    background-size: 350% 350%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1.5rem;
+}
+#about::after, #about::before {
+  content: "";
+  width: 16vw;
+  height: 16vw;
+  background: linear-gradient( to right bottom, #eed0b681, #b07b4a55);
+  box-shadow: 0px 16px 40px #00000050;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: 120px;
+}
+
+.content-about {
+  width: 60%;
+  border: 1px solid #000;
+  padding: 1rem 2rem;
+  box-shadow: 0 5px 10px #000;
+  z-index: 1;
+
+}
+ #about .content-about .box-text-about h2 {
+  margin: 0;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  color: #dddddd;
+}
+#about .content-about .box-text-about p , ul{
+  line-height: 1.8rem;
+  font-size: 1.2em;
+  color: #dddddd;
+}
+
+
+/* =================== the style of the galery ======== */
+h2 {
+  font-size: 2.5em;
+  text-transform: capitalize;
+  color: #161616;
+  margin-left: 2%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+  flex: 25%;
+  max-width: calc((80% - 16px)/ 3) ;
+  padding: 0 8px;
+}
+
+.column img {
+  margin-top: 20px;
+  vertical-align: middle;
+  width: 100%;
+  max-height: 400px;
+  box-shadow: 0 8px 30px #000;
+  transition: ease-in-out .2s;
+  opacity: .85;
+}
+.column img:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+
+/* ==============preset section style ========= */
+.preset{
+  height: auto;
+  padding: 2rem;
+  
+}
+.preset .box-text-preset {
+  width: 80%;
+  overflow: hidden;
+  padding: 2rem ;
+  text-align: center;
+  margin: auto;
+  background-color: #d4d4d485;
+ 
+}
+.preset .box-text-preset h2{
+  font-size: 2em;
+  color: #3a3a3a;
+  font-weight: 700;
+  font-family: 'Poppins',sans-serif;
+  text-transform: capitalize;
+}
+.preset .box-text-preset .box-imag-preset {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.preset .box-text-preset .box-imag-preset img {
+  width: 45%;
+  height: 100%;
+}
+.preset .box-text-preset p {
+  text-align: left;
+  line-height: 1.7em;
+  font-size: 1.2em;
+letter-spacing: .9px;
+}
+
+.preset .content-preset {
+  padding-right: 2rem;
+  display: flex;
+  grid-gap: 1.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.preset .content-preset  .box-preset  {
+  background: #f8f8f8;
+  box-shadow: -6px 5px 15px #888;
+  height: 350px;
+  width: 350px;
+  border-radius: 4px;
+  padding: .5rem;
+  position: relative;
+  overflow: hidden;
+  transition: ease-in-out .3s;
+} 
+.preset .content-preset  .box-preset:hover {
+  background-color: rgba(128, 128, 128, 0.123);
+  transform: scale(1.02);
+}
+.preset .content-preset  .box-preset .befor-preset{
+  height: 100%; width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+.preset .content-preset  .box-preset .befor-preset img{
+  height: 40%; width: 55%;
+  display: block;
+  margin-bottom: 20px;
+} 
+.preset .content-preset  .box-preset .befor-preset h3{
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5vw;  
+} 
+.preset .content-preset  .box-preset .befor-preset p{
+  font-size: .9em;
+  color: #1A1A1A;
+  font-family: adobe-clean,sans-serif;
+  margin-bottom: 20px;
+  width: 100%;
+  line-height: 1.2em;
+} 
+.preset .content-preset  .box-preset .befor-preset a{
+  border: 1px solid #888;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #000;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: .2s ease-in;
+  cursor: pointer;
+} 
+.preset .content-preset  .box-preset .befor-preset .vieu-preset{ right: 165px;} 
+.preset .content-preset  .box-preset .befor-preset a:hover{ background-color: #1f1f1f; color: #fff;}
+.preset .content-preset  .box-preset .befor-preset span{
+  float: right;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+} 
+
+/*============contact=======================*/
+#contact{
+  background-color: rgb(26, 26, 26);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 2rem;
+}
+#contact .content-form {
+  width: 100%;
+  height: auto;
+  border-right: 2px solid rgb(100, 100, 100);
+}
+#contact .content-form form label {
+  color: #fff;
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+#contact .content-form form  input,textarea{
+  width: 85%;
+  height: 35px;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  background-color: rgba(63, 63, 63, 0.849);
+  outline: none;
+  border: none;
+  color: #f5f5f5;
+  border-radius: 2px;
+}
+#contact .content-form form  textarea {
+  height: 100px;
+}
+#contact .content-form form  .btn input{
+  text-transform: capitalize;
+  width: 150px;
+  height: 35px;
+  margin: 0 10px 0 0;
+  padding: 0;
+  font-size: 1.5rem;
+  background-color: rgba(255, 68, 0, 0.548);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  margin: .4rem;
+  transition: ease-in-out .3s;
+}
+#contact .content-form form  .btn input:hover {
+  background-color: rgba(255, 68, 0, 0.808);
+}
+/*============== the second parte of contact */
+#contact .info-contact{
+  color: #fff;
+}
+#contact .info-contact .sec {
+  padding: 2rem;
+}
+#contact .info-contact .sec i{
+  font-size: 2rem;
+  margin-right: 10px;
+}
+#contact .info-contact .sec p{
+  font-size: 1.2rem;
+}
+/*========= card parte style */
+
+.sec-social a {
+  text-decoration: none;
+  color: #e8e8e8;
+}
+.sec-social a i{
+  font-size: 55px;
+  margin-left: 30px;
+}
+.sec-social a i:hover{
+  color: #e8e8e8c4;
+}
+
+/*================== style of footer =========== */
+footer {
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid rgb(100, 100, 100);
+}
+footer p {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    letter-spacing: 2.5px;
+}
