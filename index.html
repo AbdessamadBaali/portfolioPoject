@@ -10,21 +10,22 @@
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/fontawesome-free-6.0.0-beta2-web/css/all.css">
     <link rel="stylesheet" href="styles/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- the header of the page -->
     <header>
         <nav>
              <!--logo -->      
-            <div>
-                <a href="#"><img src="images/logo-min.png" alt="logo of the page"></a>
+            <div data-aos="fade-right">
+                <a  href="#"><img src="images/logo-min.png" alt="logo of the page"></a>
             </div>  
             <!--menu-btn -->
             <input class="menu-btn" type="checkbox" id="menu-btn">
             <label class="menu-icon" for="menu-btn">
                 <span class="nav-icon"></span>
             </label>        
-            <ul class="menu">
+            <ul data-aos="fade-left" class="menu">
                 <li><a href="#home">Home</a></li>	
                 <li><a href="#about">About me</a></li>	
                 <li><a href="#glery">glery</a></li>	
@@ -34,22 +35,22 @@
         </nav> 
     </header>
     <!-- home -->
-    <section id="home">
-        <p class="text-white text-capitalize fs-1  m-0">weclcom i'm omar</p>
-        <div class="content-home">    
+    <section  id="home">
+        <p data-aos="zoom-in" class="text-capitalize m-0">weclcom i'm omar</p>
+        <div data-aos="zoom-in" class="content-home">    
             <h1 class="display-3"> filmmaker&designer </h1>
         </div>
-        <q class="fs-4 fw-light text-white text-center mt-2">Filmmaking is a chance to live many lifetimes</q>
-        <div class="box-card01 p-2">
-            <a class="fs-6 text-white" href="https://www.instagram.com/dy.omar_/" target="_blank"> <i class="fab fa-instagram" aria-hidden="true"> </i></a>
-            <a class="fs-6 text-white" href="https://twitter.com/OmarKabiri1"  target="_blank"> <i class="fab fa-twitter" aria-hidden="true"></i> </a> 
-            <a class="fs-6 text-white" href="home.html"> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> </a> 
+        <q data-aos="zoom-in" class="text-center mt-2">Filmmaking is a chance to live many lifetimes</q>
+        <div class="box-card01">
+            <a class="fs-6 " href="https://www.instagram.com/dy.omar_/" target="_blank"> <i class="fab fa-instagram" aria-hidden="true"> </i></a>
+            <a class="fs-6 " href="https://twitter.com/OmarKabiri1"  target="_blank"> <i class="fab fa-twitter" aria-hidden="true"></i> </a> 
+            <a class="fs-6 " href="home.html"> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> </a> 
         </div>
     </section>
      <!-- about section -->
     <section id="about" class="d-flex justify-content-center align-items-center">      
-        <div class="mx-auto px-5 py-4 w-75 border border-2 border-dark "> 
-            <h2 class="h2 text-white text-capitalize">about me</h2>
+        <div data-aos="fade-right" data-aos-duration="10000" class="mx-auto px-5 py-4 w-75"> 
+            <h2 class=" text-white text-capitalize">about me</h2>
             <p class=text-white>
                 Hi, i'm Omar Kabir, born in 2000, and my hobby is playing basketball. i am passionate about photography and video processing.professional in production programs
                 <ul class=text-white>
@@ -66,22 +67,65 @@
                 <br>
             </p>
         </div>
-    </section>     
+    </section>   
+        <!-- preset section -->
+        <section id="preset">
+            <div class="mx-auto py-4 ">
+                <div>
+                    <h2 data-aos="fade-right" class=" text-uppercase text-center"> WHAT ARE LIGHTROOM PRESETS AND WHY YOU SHOULD BE USING THEM!</h2>
+                    <div class="row justify-content-evenly my-4"> 
+                        <img data-aos="fade-right" data-aos-duration="10000" class="col-md-5 col-sm-6 img-thumbnail" src="images/preset/image1-min.jpeg" alt="image before the preset">
+                        <img data-aos="fade-left" data-aos-duration="10000" class="col-md-5 col-sm-6 img-thumbnail" src="images/preset/image1-preset1-min.jpeg" alt="the same images after the preset">
+                    </div>
+                    <p >
+                        You’ve captured the photo, the angle is perfect and you are happy  with the composition but you’re only halfway done with this image. 
+                        It’s time to edit the photo and bring out the best elements, colors, and sharpness of the image. The most popular program to use for editing 
+                        in Adobe Lightroom, which is also a great way to organize your photos as well as being the ultimate editing software. The easiest way to edit your
+                        photos in lightroom is with photo presets that can correct the colors and  grades with just a simple click. It’s a great starting point for editing images and can save you lots of time by achieving the look you want without
+                        lots of long hours of editing. In this blog post, I am going to detail what is a preset,
+                         how does a preset work, and why you should use Lightroom Presets.
+                   </p>
+                </div>
+                <div> 
+                    <h2 class=" text-capitalize">My Lightroom Photo Presets (Mobile & Desktop)</h2>
+                    <p >
+                        My Lightroom Presets are popular amongst travelers and adventure photographers.
+                        You can download either the mobile presets or the desktop presets at the links below.
+                        Click here to download: Jackson Groves Mobile Lightroom Presets
+                        Click here to download: Jackson Groves Desktop Lightroom Presets
+                    </p>
+                </div>
+                <div> 
+                    <h2 class=" text-capitalize">What is a Lightroom Preset?</h2>
+                    <p >
+                        A Lightroom preset is a configuration of settings, designed to achieve a certain look or style of your photo. You install the presets into your lightroom and then
+                        when you click on a particular preset while in the develop module, the pre-determined (pre-set) settings will apply to that photo. With just one click on a preset,
+                        your photo can be altered in hundreds of different pre-set alterations to colors, hues, img-thumbnails,  contrast, grain and more. The beauty of using presets is the consistency of style, time-management, 
+                        and simplicity they bring to your editing sessions. If you find presets that work for your style,  you can speed up your workflow dramatically and you can achieve the colors and look you want without 
+                        needing to edit each photo individually. Once you click on the preset and it applies to your photo, you can then make manual adjustments because it is likely the preset won’t be perfect on every photo.
+                        Lightroom presets are a good foundation but often you can still need to make several adjustments to each photo to make sure they are perfect.
+                        <br>
+                        My Lightroom Presets are designed for simple photo edits that create a bright, sunny and tropical feel for your travel photos. I often only use one-click edits for my photos but most times
+                        I will make a few adjustments after using the preset to create the exact look I want after the preset has created the base. If you want to see some before and after comparisons of photos when
+                        using my Lightroom Presets you can view the Mobile Lightroom Presets or the Desktop Lightroom Presets.
+                    </p>
+                </div>
+            </div>
+        </section>  
     <!-- galery -->
-    <h2 class="h2 m-4 text-capitalize text-secondary">galery</h2>
-    <section id="glery" class="container-fluid ">
-        
-        <div class="row container mx-auto  justify-content-center" >  
-                <img class="col-md-4 col-xs-4 img-thumbnail " src="images/galery/image1.jpeg" alt="1">
-                <img class="col-md-4 col-xs-4  img-thumbnail" src="images/galery/image2.jpeg" alt="2">
-                <img class="col-md-4 col-xs-4 img-thumbnail" src="images/galery/image3.jpeg" alt="3">
-                <img class="col-md-3 col-xs-6 img-thumbnail" src="images/galery/image4.jpeg" alt="4">
-                <img class="col-md-3 col-xs-6 img-thumbnail" src="images/galery/image5.jpeg" alt="5">
-                <img class="col-md-3 col-xs-4  img-thumbnail" src="images/galery/image6.jpeg" alt="6">
-                <img class="col-md-3 col-xs-4  img-thumbnail" src="images/galery/image7.jpeg" alt="7">
-                <img class="col-md-4 col-xs-4 img-thumbnail" src="images/galery/image8.jpeg" alt="8">
-                <img class="col-md-4 col-xs-6  img-thumbnail" src="images/galery/image9.jpeg" alt="9">
-                <img class="col-md-4 col-xs-6 img-thumbnail" src="images/galery/image10.jpeg" alt="10">
+    <h2 class=" m-4 text-capitalize text-secondary">galery</h2>
+    <section id="glery" class="container-fluid ">  
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-xs-3 container mx-auto  justify-content-center" >  
+                <img data-aos="fade-right" data-aos-duration="1000" class="img-thumbnail " src="images/galery/image1.jpeg" alt="1">
+                <img data-aos="fade-left" data-aos-duration="1000" class="img-thumbnail" src="images/galery/image2.jpeg" alt="2">
+                <img data-aos="fade-right" data-aos-duration="1000" class="img-thumbnail" src="images/galery/image3.jpeg" alt="3">
+                <img data-aos="fade-left" data-aos-duration="1000" class="img-thumbnail" src="images/galery/image4.jpeg" alt="4">
+                <img data-aos="fade-right" data-aos-duration="1000" class="img-thumbnail" src="images/galery/image5.jpeg" alt="5">
+                <img data-aos="fade-left" data-aos-duration="1000" class="img-thumbnail" src="images/galery/image6.jpeg" alt="6">
+                <img data-aos="fade-right" data-aos-duration="1000" class="img-thumbnail" src="images/galery/image7.jpeg" alt="7">
+                <img data-aos="fade-left" data-aos-duration="1000" class="img-thumbnail" src="images/galery/image8.jpeg" alt="8">
+                <img data-aos="fade-right" data-aos-duration="1000" class="img-thumbnail" src="images/galery/image9.jpeg" alt="9">
+                <img data-aos="fade-left" data-aos-duration="1000" class="img-thumbnail" src="images/galery/image10.jpeg" alt="10">
         </div>
         <!-- slider galery -->
         <div id="carouselExampleIndicators" class="carousel slide container my-5" >
@@ -123,110 +167,72 @@
             </button>
           </div>
     </section>
-    <!-- preset section -->
-    <section id="preset">
-        <div class="mx-auto py-4 ">
-            <div>
-                <h2 class="h2 text-uppercase text-center"> WHAT ARE LIGHTROOM PRESETS AND WHY YOU SHOULD BE USING THEM!</h2>
-                <div class="row justify-content-between my-4"> 
-                    <img class="col-md-5 col-sm-6 img-thumbnail" src="images/preset/image1-min.jpeg" alt="image before the preset">
-                    <img class="col-md-5 col-sm-6 img-thumbnail" src="images/preset/image1-preset1-min.jpeg" alt="the same images after the preset">
-                </div>
-                <p class="fs-6">
-                    You’ve captured the photo, the angle is perfect and you are happy  with the composition but you’re only halfway done with this image. 
-                    It’s time to edit the photo and bring out the best elements, colors, and sharpness of the image. The most popular program to use for editing 
-                    in Adobe Lightroom, which is also a great way to organize your photos as well as being the ultimate editing software. The easiest way to edit your
-                    photos in lightroom is with photo presets that can correct the colors and  grades with just a simple click. It’s a great starting point for editing images and can save you lots of time by achieving the look you want without
-                    lots of long hours of editing. In this blog post, I am going to detail what is a preset,
-                     how does a preset work, and why you should use Lightroom Presets.
-               </p>
-            </div>
-            <div> 
-                <h2 class="h2 text-capitalize">My Lightroom Photo Presets (Mobile & Desktop)</h2>
-                <p class="fs-6">
-                    My Lightroom Presets are popular amongst travelers and adventure photographers.
-                    You can download either the mobile presets or the desktop presets at the links below.
-                    Click here to download: Jackson Groves Mobile Lightroom Presets
-                    Click here to download: Jackson Groves Desktop Lightroom Presets
-                </p>
-            </div>
-            <div> 
-                <h2 class="h2 text-capitalize">What is a Lightroom Preset?</h2>
-                <p class="fs-6">
-                    A Lightroom preset is a configuration of settings, designed to achieve a certain look or style of your photo. You install the presets into your lightroom and then
-                    when you click on a particular preset while in the develop module, the pre-determined (pre-set) settings will apply to that photo. With just one click on a preset,
-                    your photo can be altered in hundreds of different pre-set alterations to colors, hues, img-thumbnails,  contrast, grain and more. The beauty of using presets is the consistency of style, time-management, 
-                    and simplicity they bring to your editing sessions. If you find presets that work for your style,  you can speed up your workflow dramatically and you can achieve the colors and look you want without 
-                    needing to edit each photo individually. Once you click on the preset and it applies to your photo, you can then make manual adjustments because it is likely the preset won’t be perfect on every photo.
-                    Lightroom presets are a good foundation but often you can still need to make several adjustments to each photo to make sure they are perfect.
-                    <br>
-                    My Lightroom Presets are designed for simple photo edits that create a bright, sunny and tropical feel for your travel photos. I often only use one-click edits for my photos but most times
-                    I will make a few adjustments after using the preset to create the exact look I want after the preset has created the base. If you want to see some before and after comparisons of photos when
-                    using my Lightroom Presets you can view the Mobile Lightroom Presets or the Desktop Lightroom Presets.
-                </p>
-            </div>
-        </div>
-    </section>
     <!-- preset product section  -->
-    <h2 class="h2 text-capitalize m-4 text-secondary">preset Producet</h2>
-    <section id="product" class="container py-5 ">
-        <div class="shadow" >
-                <img  src="images/preset//image2-preset2-min.jpeg" alt="">
-                <h3 class="fs-5 text-capitalize text-center">orange presets</h3>
-                <p class="fs-6">This collection of 15 FREE Lightroom presets will get you the beautiful and cinematic Orange & Teal look with only a few clicks.</p>
-                <div class="btn-group ">
-                    <a class="btn btn-outline-success" href="#">vieu</a>
-                    <a class="btn btn-outline-success" href="#" >contact me</a>
-                </div>   
-                    <span >4.5$</span>
-                
-        </div>
-        <div class="shadow" >
-                <img  src="images/preset/image3-preset3-min.jpeg" alt="">
-                <h3 class="fs-5 text-capitalize text-center">Sky Blue presets</h3>
-                <p class="fs-6">This Blue Sky Booster free lightroom presets surely gives a boost effects to blue color element, it brings the strong blue color touch.</p>
-                <div class="btn-group">
-                    <a class="btn btn-outline-success" href="#">vieu</a>
-                    <a class="btn btn-outline-success" href="#" >contact me</a>
-                </div>
-                <span>4.5$</span>
-        </div>
-        <div class=" shadow" >  
-                <img  src="images/preset/image4-preset4-min.jpeg" alt="">
-                <h3 class="fs-5 text-capitalize text-center">Tint black presets</h3>
-                <p class="fs-6">This collection of 15 FREE Lightroom presets will get you the beautiful and cinematic Orange & Teal look with only a few clicks.</p>
-                <div class="btn-group ">
-                    <a class="btn btn-outline-success" href="#">vieu</a>
-                    <a class="btn btn-outline-success" href="#" >contact me</a>
-                </div>
-                <span>4.5$</span>
-        </div>
-        <div class="shadow" >  
-                <img  src="images/preset/image5-preset5-min.jpeg" alt="">
-                <h3 class="fs-5 text-capitalize text-center">Teal and orange presets</h3>
-                <p class="fs-6">This collection of 15 FREE Lightroom presets will get you the beautiful and cinematic Orange & Teal look with only a few clicks.</p>
-                <div class="btn-group ">
-                    <a class="btn btn-outline-success" href="#">vieu</a>
-                    <a class="btn btn-outline-success" href="#" >contact me</a>
-                </div>
-                <span>4.5$</span>
-        </div> 
-        <div class="shadow">
-            <img  src="images/preset/image1-preset1-min.jpeg" alt="">
-            <h3 class="fs-5 text-capitalize text-center">Teal and orange presets</h3>
-            <p class="fs-6">This collection of 15 FREE Lightroom presets will get you the beautiful and cinematic Orange & Teal look with only a few clicks.</p>
-            <div class="btn-group ">
-                <a class="btn btn-outline-success" href="#">vieu</a>
-                <a class="btn btn-outline-success" href="#" >contact me</a>  
+    <section id="product" class="container-fluid ">
+        <h2 class=" text-capitalize m-4 text-secondary">preset Producet</h2>
+        <div class="container-fluid ">
+            <div data-aos="zoom-in-up"  data-aos-duration="1000">
+                <figure>
+                    <img  src="images/preset//image2-preset2-min.jpeg" alt="">
+                </figure>
+                <div>
+                    <h5 class="text-capitalize text-center">orange presets</h5>
+                    <p >This collection of 15 FREE Lightroom presets will get you the beautiful and cinematic Orange & Teal look with only a few clicks.</p>
+                    <a class="btn btn-outline-success" href="#">download</a>
+                    <span >4.5$</span> 
+                </div> 
             </div>
-            <span>4.5$</span>
-    </div>  
+            <div data-aos="zoom-in-up"  data-aos-duration="1000">
+                <figure>
+                    <img  src="images/preset/image3-preset3-min.jpeg" alt="">
+                </figure>
+                <div>
+                    <h5 class="text-capitalize text-center">Sky Blue presets</h5>
+                    <p >This Blue Sky Booster free lightroom presets surely gives a boost effects to blue color element, it brings the strong blue color touch.</p>
+                    <a class="btn btn-outline-success" href="#">download</a>
+                    <span>4.5$</span>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up"  data-aos-duration="1000">  
+                <figure>
+                    <img  src="images/preset/image4-preset4-min.jpeg" alt="">
+                </figure>
+                <div>
+                    <h5 class="h5text-capitalize text-center">Tint black presets</h5>
+                    <p >This collection of 15 FREE Lightroom presets will get you the beautiful and cinematic Orange & Teal look with only a few clicks.</p>
+                    <a class="btn btn-outline-success" href="#">download</a>
+                    <span>4.5$</span>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up"  data-aos-duration="1000">  
+                <figure>
+                    <img  src="images/preset/image5-preset5-min.jpeg" alt="">
+                </figure>
+                <div>
+                    <h5 class="h5text-capitalize text-center">Teal and orange presets</h5>
+                    <p >This collection of 15 FREE Lightroom presets will get you the beautiful and cinematic Orange & Teal look with only a few clicks.</p>
+                    <a class="btn btn-outline-success" href="#">download</a>
+                    <span>4.5$</span>
+                </div>
+            </div> 
+            <div data-aos="zoom-in-up"  data-aos-duration="1000">
+                <figure>
+                    <img  src="images/preset/image1-preset1-min.jpeg" alt="">
+                </figure>
+                <div>
+                    <h5 class="h5text-capitalize text-center">Teal and orange presets</h5>
+                    <p >This collection of 15 FREE Lightroom presets will get you the beautiful and cinematic Orange & Teal look with only a few clicks.</p>
+                    <a class="btn btn-outline-success" href="#">download</a>
+                    <span>4.5$</span>
+                </div>
+            </div>  
+        </div>
     </section>   
 
     <!-- contact section -->
-    <h2 class="h2 text-capitalize m-4 text-secondary">contact</h2>
+    <h2 class=" text-capitalize m-4 text-secondary">contact</h2>
     <section id="contact">
-        <div class="container-fluid row " style="margin: 0 !important;">
+        <div data-aos="zoom-in" data-aos-duration="10000" class="container-fluid row " style="margin: 0 !important;">
             <!-- the first part of  contact -->
             <div class="container-fluid col-md-6 my-3">
                 <form id="form-contact"  autocomplete="on">
@@ -285,5 +291,9 @@
     <!-- the script link of the page -->
     <script src="script/script.js"></script>
     <script src="styles/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

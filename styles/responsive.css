@@ -17,8 +17,8 @@ nav .menu-btn,
 		position : absolute;
 		top : 65px;
 		left : 60vw;
-		background-color : #f2f2f2;
-		border-bottom : 3px solid #000000cc;
+		background-color : #f2f2f2de;
+		border-bottom : 2px solid #000000cc;
 		width : 100%;
 		padding : 0px;
 		margin : 0px;
@@ -98,15 +98,19 @@ nav .menu-btn,
 		align-items: flex-start !important;
 		height: auto ;
 	}
+	#home  p{ font-size: 2em;}
+	#home  q{ font-size: 1em}
 	#about>div {
 		width: 100% !important;
 	}
 	.row img {
-		width: 50%;
-		max-height: 250px !important;
+		width: 45%;
+		max-height: 250px;
+		margin: 0.3rem;
+		
 	  }
-	#preset .w-75 {
-		width: 100% !important;
+	#preset {
+		width: 100% ;
 	}
 
 }
