@@ -4,7 +4,7 @@ nav .menu-btn,
 		display : none;
 	}
 
-@media screen and (max-width:900px) {
+@media (max-width:900px){
 .menu-icon{ display : block;}
 	nav{
 		justify-content: space-between;
@@ -78,7 +78,7 @@ nav .menu-btn,
 
 }
 
-@media(max-width : 720px){
+@media(max-width : 720px) and (max-width : 900px){
 	#home {
 		height: 85vh;
 	}

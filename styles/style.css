@@ -22,7 +22,7 @@ nav{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.795);
+	box-shadow: 1px 1px 25px #0000008f;
 	width:100%;
   height: 45px;
 	background-color: #000000;
@@ -56,8 +56,8 @@ nav ul li a:hover{
 /* =================== home setcion style */
 #home {
     height: 100vh;
-    background-color: #273736;
-    background-image: url("/images/bg1-min.jpg");
+    background-color: #dcdde1;
+    /* background-image: url("/images/bg1-min.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -74,9 +74,9 @@ nav ul li a:hover{
   #home q {
     color: whitesmoke;
     font-weight: 600;
-    -webkit-text-stroke: 0.1vw #000000;
-    font-size: 2.5em;
-    text-shadow: 0 5px 10px #000;
+    -webkit-text-stroke: 0.05vw #d18631;
+    font-size: 1.8em;
+    text-shadow: 0 2px 1px #d18631;
   }
   #home q{
     font-weight: bolder;
@@ -86,7 +86,8 @@ nav ul li a:hover{
     text-transform: capitalize;
     letter-spacing: 2px;
     padding: 0px;
-    -webkit-text-stroke: 0.2vw #d18631; 
+    font-size: 3em;
+    -webkit-text-stroke: 0.0vw #000; 
     font-weight: 600;
   }  
 .content-home  h1::before {
@@ -97,18 +98,19 @@ nav ul li a:hover{
   width: 100%;
   height: 100%;
   overflow: hidden;
-  color: #fff;
   border-right: 2px solid #000;
-  -webkit-text-stroke: 0.2vw #d18631;
+  -webkit-text-stroke: 0.1vw #000;
   animation: animate 6s linear infinite;
   -webkit-animation: animate 8s linear infinite;
 }
 @keyframes animate {
   0%,10%, 100% {
     width: 0;
+
   }
   70%,90% {
     width: 100%;
+
   }
 }
   .box-card01 {
@@ -122,7 +124,7 @@ nav ul li a:hover{
 .box-card01 a i {
   font-size: 1.5rem;
   margin: 10px 0;
-  color: whitesmoke;
+  color: #000;
 }
 .box-card01 a i:hover {
     color: rgba(255, 255, 255, 0.616);
@@ -151,15 +153,16 @@ nav ul li a:hover{
   z-index: 1;
 }
 /* =================== the style of the galery ======== */
-.row img {
+#galery .row img {
   padding: 0;
   max-height: 300px;
   margin: 1rem;
+  box-shadow: 1px 5px 5px #0000008a;
+
 }
-.slide  {
-  height: 450px;
-  overflow: hidden;
-  padding: 0;
+#sliderGalery  {
+  width: 25%;
+  margin: auto;
 }
 /* preset */
 #preset > div {
@@ -176,32 +179,34 @@ nav ul li a:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #273736;
+  background-color: #c5c5c5;
   padding: 1rem;
 }
 #product .container-fluid > div {
 height: 25rem;
 width: 300px;
 margin: 15px;
-border: 1px solid gainsboro;
 display: flex;
 flex-direction: column;
 justify-content: center;
 background-color: #273736;
 color: gainsboro;
+box-shadow: 1px 5px 5px #0000008a;
 border-radius: 5px;
 overflow: hidden;
 }
  #product .container-fluid > div > div {
    padding: .5rem 1rem;
    height: 50%;
-   border-top: 1px solid gainsboro;
  }
  #product .container-fluid > div> div .btn {
    text-transform: capitalize;
  }
+ #product .container-fluid > div figure img {
+   transition: ease-in-out .3s
+ }
  #product .container-fluid > div:hover figure img {
-   transform: scale(1.05, 1.05)
+   transform: scale(1.1, 1.1)
  }
  #product.container-fluid figure {
    height:55%;
