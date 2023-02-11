@@ -114,7 +114,8 @@ nav .menu-btn,
 		align-items: flex-start !important;
 		height: auto ;
 	}
-	#home  p,#home  q{ font-size: 2em;}
+	#home  p{ font-size: 1.6em;}
+	#home  q{ font-size: 1em;}
 	#about > div {
 		width: 100% !important;
 	}
